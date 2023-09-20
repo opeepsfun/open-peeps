@@ -1,0 +1,27 @@
+{
+    "name": "@opeepsfun/open-peeps",
+    "version": "1.0.0",
+    "description": "npm package of open peeps",
+    "main": "build/index.js",
+    "types": "build/index.d.ts",
+    "author": "Emre Çakır",
+    "homepage": "https://opeeps.fun",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "prebuild": "rimraf build",
+        "build": "tsc -d"
+    },
+    "keywords": [],
+    "license": "MIT",
+    "dependencies": {
+        "react": "^18.2.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.6.3",
+        "@types/react": "^18.2.22",
+        "rimraf": "^5.0.1",
+        "typescript": "^5.2.2"
+    }
+}

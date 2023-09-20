@@ -14,5 +14,5 @@
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true
     },
-    "exclude": ["node_modules", "tests", "examples"]
+    "exclude": ["node_modules", "tests", "examples", "README.md"]
 }

@@ -1,6 +1,6 @@
 {
     "name": "@opeepsfun/open-peeps",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "npm package of open peeps",
     "main": "build/index.js",
     "types": "build/index.d.ts",
@@ -9,9 +9,13 @@
     "directories": {
         "lib": "lib"
     },
+    "files": [
+        "build/"
+    ],
     "scripts": {
         "prebuild": "rimraf build",
-        "build": "tsc -d"
+        "build": "tsc -d",
+        "publish": "npm publish --access public"
     },
     "keywords": [],
     "license": "MIT",

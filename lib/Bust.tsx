@@ -5,7 +5,7 @@ type PieceDetails = {
     options: { [key: string]: string };
 };
 
-const Bust = ({ style, body, head, face, beard, mask, accessory }: { body: PieceDetails; head: PieceDetails; face: PieceDetails; beard?: PieceDetails; mask?: PieceDetails; accessory?: PieceDetails; style?: React.CSSProperties }) => {
+export const Bust = ({ style, body, head, face, beard, mask, accessory }: { body: PieceDetails; head: PieceDetails; face: PieceDetails; beard?: PieceDetails; mask?: PieceDetails; accessory?: PieceDetails; style?: React.CSSProperties }) => {
     return (
         <svg style={style} xmlns='http://www.w3.org/2000/svg' viewBox='184.21621621621625 210.7874999999999 940.2702702702704 1130.5875' overflow='visible' width='940.2702702702704px' height='1130.5875px'>
             <g id='Bust'>
@@ -295,5 +295,3 @@ const createHead = (body: PieceDetails, children: React.JSX.Element) => {
 
     return group;
 };
-
-export default Bust;

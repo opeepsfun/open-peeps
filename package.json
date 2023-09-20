@@ -1,6 +1,6 @@
 {
     "name": "@opeepsfun/open-peeps",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "npm package of open peeps",
     "main": "build/index.js",
     "types": "build/index.d.ts",
@@ -17,7 +17,25 @@
         "build": "tsc -d",
         "publish": "npm publish --access public"
     },
-    "keywords": [],
+    "keywords": [
+        "opeepsfun",
+        "open-peeps",
+        "illustrations",
+        "hand-drawn",
+        "art",
+        "design",
+        "react",
+        "components",
+        "UI",
+        "graphics",
+        "vector",
+        "svg",
+        "creative",
+        "personal-use",
+        "commercial-use",
+        "characters",
+        "avatars"
+    ],
     "license": "MIT",
     "dependencies": {
         "react": "^18.2.0"

@@ -2,13 +2,10 @@
     "name": "@opeepsfun/open-peeps",
     "version": "1.0.2",
     "description": "npm package of open peeps",
-    "main": "build/index.js",
-    "types": "build/index.d.ts",
+    "main": "./build/index.js",
+    "types": "./build/index.d.ts",
     "author": "Emre Çakır",
     "homepage": "https://opeeps.fun",
-    "directories": {
-        "lib": "lib"
-    },
     "files": [
         "build/"
     ],

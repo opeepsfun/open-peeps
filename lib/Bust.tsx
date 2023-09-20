@@ -42,7 +42,7 @@ const createHair = (head: PieceDetails) => {
         return null;
     }
 
-    const element = require(`@/lib/open-peeps/head/${head.type}`)?.default;
+    const element = require(`./head/${head.type}`)?.default;
 
     const reactElement = React.createElement(element, head.options);
 
@@ -222,14 +222,14 @@ const createHair = (head: PieceDetails) => {
 };
 
 const createFace = (face: PieceDetails) => {
-    const element = require(`@/lib/open-peeps/face/${face.type}`)?.default;
+    const element = require(`./face/${face.type}`)?.default;
     const reactElement = React.createElement(element, face.options);
 
     return reactElement;
 };
 
 const createBody = (body: PieceDetails) => {
-    const element = require(`@/lib/open-peeps/body/effigy/${body.type}`)?.default;
+    const element = require(`./body/effigy/${body.type}`)?.default;
     const reactElement = React.createElement(element, body.options);
 
     return reactElement;
@@ -240,7 +240,7 @@ const createBeard = (beard: PieceDetails | undefined) => {
         return null;
     }
 
-    const element = require(`@/lib/open-peeps/beard/${beard.type}`)?.default;
+    const element = require(`./beard/${beard.type}`)?.default;
 
     const reactElement = React.createElement(element, beard.options);
 
@@ -252,7 +252,7 @@ const createBeard = (beard: PieceDetails | undefined) => {
 //     return null;
 //   }
 
-//   const element = lazy(() => import(`@/lib/open-peeps/mask/${mask.type}`));
+//   const element = lazy(() => import(`./mask/${mask.type}`));
 //   const reactElement = React.createElement(element, mask.options);
 
 //   return reactElement;
@@ -263,7 +263,7 @@ const createAccessory = (accessory: PieceDetails | undefined) => {
         return null;
     }
 
-    const element = require(`@/lib/open-peeps/accessory/${accessory.type}`)?.default;
+    const element = require(`./accessory/${accessory.type}`)?.default;
 
     const reactElement = React.createElement(element, accessory.options);
 

@@ -66,6 +66,10 @@ const createHair = (head: PieceDetails) => {
         return <g transform='translate(-20 -30)'>{reactElement}</g>;
     }
 
+    if (head.type === "Beanie") {
+        return <g transform='translate(20 0)'>{reactElement}</g>;
+    }
+
     if (head.type === "BunClip") {
         return <g transform='translate(20 -70)'>{reactElement}</g>;
     }
@@ -151,11 +155,11 @@ const createHair = (head: PieceDetails) => {
     }
 
     if (head.type === "Mohawk") {
-        return <g transform='translate(50 0)'>{reactElement}</g>;
+        return <g transform='translate(40 0)'>{reactElement}</g>;
     }
 
     if (head.type === "MohawkKnots") {
-        return <g transform='translate(50 0)'>{reactElement}</g>;
+        return <g transform='translate(40 0)'>{reactElement}</g>;
     }
 
     if (head.type === "NoHairThree") {
@@ -244,6 +248,26 @@ const createBeard = (beard: PieceDetails | undefined) => {
 
     const reactElement = React.createElement(element, beard.options);
 
+    if (beard.type === "FullColor") {
+        return <g transform='translate(0 -20) scale(0.94 0.97)'>{reactElement}</g>;
+    }
+
+    if (beard.type === "FullMax") {
+        return <g transform='translate(0 -20) scale(0.98 1)'>{reactElement}</g>;
+    }
+
+    if (beard.type === "FullMedium") {
+        return <g transform='translate(0 -10) scale(0.98 1)'>{reactElement}</g>;
+    }
+
+    if (beard.type === "MustacheBull") {
+        return <g transform='translate(0 -20)'>{reactElement}</g>;
+    }
+
+    if (beard.type === "MustacheEight") {
+        return <g transform='translate(-240 -75)'>{reactElement}</g>;
+    }
+
     return reactElement;
 };
 
@@ -284,6 +308,22 @@ const createHead = (body: PieceDetails, children: React.JSX.Element) => {
             {children}
         </g>
     );
+
+    if (body.type === "Explaining") {
+        return <g transform='translate(0 30)'>{group}</g>;
+    }
+
+    if (body.type === "PointingUp") {
+        return <g transform='translate(0 30)'>{group}</g>;
+    }
+
+    if (body.type === "PolkadotJacket") {
+        return <g transform='translate(0 20)'>{group}</g>;
+    }
+
+    if (body.type === "Killer") {
+        return <g transform='translate(0 10)'>{group}</g>;
+    }
 
     if (body.type === "StrippedPocketTee") {
         return <g transform='translate(250 0)'>{group}</g>;

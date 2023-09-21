@@ -2,10 +2,11 @@
     "compilerOptions": {
         "target": "es5",
         "module": "ESNext",
-        "moduleResolution": "node",
+        "moduleResolution": "Node",
         "jsx": "react",
         "declaration": true,
-        "sourceMap": true,
+        "sourceMap": false,
+        "declarationDir": "./build/types",
         "outDir": "./build",
         "rootDir": "./lib",
         "removeComments": true,
@@ -14,5 +15,5 @@
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true
     },
-    "exclude": ["node_modules", "tests", "examples", "README.md"]
+    "exclude": ["node_modules", "build", "tests", "examples", "README.md"]
 }

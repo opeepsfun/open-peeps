@@ -1,14 +1,11 @@
 {
     "name": "@opeepsfun/open-peeps",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "description": "npm package of open peeps",
     "main": "./build/index.js",
-    "types": "./build/index.d.ts",
+    "types": "./build/types/index.d.ts",
     "author": "Emre Çakır",
     "homepage": "https://opeeps.fun",
-    "files": [
-        "build/"
-    ],
     "scripts": {
         "prebuild": "rimraf build",
         "build": "tsc -d",

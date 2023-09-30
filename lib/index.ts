@@ -6,4 +6,4 @@ export { StandingBodies } from "./body/standing";
 export { Faces } from "./face";
 export { Heads } from "./head";
 
-export { Bust } from "./Bust";
+export { Effigy } from "./Effigy";

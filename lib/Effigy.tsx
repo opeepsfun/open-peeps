@@ -5,29 +5,29 @@ type PieceDetails = {
     options: { [key: string]: string };
 };
 
-export const Bust = ({ style, body, head, face, beard, mask, accessory }: { body: PieceDetails; head: PieceDetails; face: PieceDetails; beard?: PieceDetails; mask?: PieceDetails; accessory?: PieceDetails; style?: React.CSSProperties }) => {
+export const Effigy = ({ style, body, head, face, beard, mask, accessory }: { body: PieceDetails; head: PieceDetails; face: PieceDetails; beard?: PieceDetails; mask?: PieceDetails; accessory?: PieceDetails; style?: React.CSSProperties }) => {
     return (
         <svg style={style} xmlns='http://www.w3.org/2000/svg' viewBox='184.21621621621625 210.7874999999999 940.2702702702704 1130.5875' overflow='visible' width='940.2702702702704px' height='1130.5875px'>
             <g id='Bust'>
-                <g id='Body' transform='translate(147.000000, 639.000000) scale(1 1)'>
+                <g id='Body' transform='translate(147, 639) scale(1 1)'>
                     {createBody(body)}
                 </g>
                 {createHead(
                     body,
                     <>
-                        <g id='Hair' transform='translate(342.000000, 190.000000) scale(0.9978902953586498 1)'>
+                        <g id='Hair' transform='translate(342, 190) scale(1 1)'>
                             {createHair(head)}
                         </g>
-                        <g id='Face' transform='translate(531.000000, 366.000000) scale(1 1)'>
+                        <g id='Face' transform='translate(531, 366) scale(1 1)'>
                             {createFace(face)}
                         </g>
-                        <g id='Beard' transform='translate(494.999934, 517.999659) scale(1 1)'>
+                        <g id='Beard' transform='translate(495, 518) scale(1 1)'>
                             {createBeard(beard)}
                         </g>
-                        <g id='Mask' transform='translate(400.000000, 480.000000) scale(1 1)'>
+                        <g id='Mask' transform='translate(400, 480) scale(1 1)'>
                             {/* {createMask(mask)} */}
                         </g>
-                        <g id='Accessories' transform='translate(419.000000, 421.000000) scale(1 1)'>
+                        <g id='Accessories' transform='translate(419, 421) scale(1 1)'>
                             {createAccessory(accessory)}
                         </g>
                     </>

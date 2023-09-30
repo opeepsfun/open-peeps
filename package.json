@@ -1,6 +1,6 @@
 {
     "name": "@opeepsfun/open-peeps",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "npm package of open peeps",
     "main": "./build/index.js",
     "types": "./build/types/index.d.ts",

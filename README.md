@@ -1,5 +1,7 @@
 # @opeepsfun/open-peeps
 
+<p align="center"><img src="https://assets.opeeps.fun/open-peeps-example.png" alt="Example image" width="200"/></p>
+
 ![npm](https://img.shields.io/npm/v/@opeepsfun/open-peeps)
 ![license](https://img.shields.io/npm/l/@opeepsfun/open-peeps)
 
